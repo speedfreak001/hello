@@ -44,6 +44,7 @@ public class StudentController{
     public ResponseEntity<Student> findOneStudent(@PathVariable("id") Long id){
         Student s=service.findStudentById(id);
 
+        System.out.println("successfully added to git");
         return ResponseEntity.ok(s);
     }
 
